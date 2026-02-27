@@ -16,27 +16,55 @@ void startingPrompt(double *ptotal)
 {
     printf("Enter a number: ");
     scanf("%lf", ptotal);
-    printf("%lf ", *ptotal);
+    if (*ptotal == (int)*ptotal)
+    {
+        printf("%.0lf ", *ptotal);
+    }
+    else
+    {
+        printf("%lf ", *ptotal);
+    }
 }
 
 void addNumber(double *ptotal, double *pnumber)
 {
     *ptotal += *pnumber;
     *pnumber = 0;
-    printf("%lf ", *ptotal);
+    if (*ptotal == (int)*ptotal)
+    {
+        printf("%.0lf ", *ptotal);
+    }
+    else
+    {
+        printf("%lf ", *ptotal);
+    }
 }
 
 void subtractNumber(double *ptotal, double *pnumber)
 {
     *ptotal -= *pnumber;
     *pnumber = 0;
-    printf("%lf ", *ptotal);
+    if (*ptotal == (int)*ptotal)
+    {
+        printf("%.0lf ", *ptotal);
+    }
+    else
+    {
+        printf("%lf ", *ptotal);
+    }
 }
 void multiplyNumber(double *ptotal, double *pnumber)
 {
     *ptotal *= *pnumber;
     *pnumber = 0;
-    printf("%lf ", *ptotal);
+    if (*ptotal == (int)*ptotal)
+    {
+        printf("%.0lf ", *ptotal);
+    }
+    else
+    {
+        printf("%lf ", *ptotal);
+    }
 }
 
 void clearAll(double *ptotal, double *pnumber)
@@ -52,7 +80,14 @@ void divideNumber(double *ptotal, double *pnumber)
 {
     *ptotal /= *pnumber;
     *pnumber = 0;
-    printf("%lf ", *ptotal);
+    if (*ptotal == (int)*ptotal)
+    {
+        printf("%.0lf ", *ptotal);
+    }
+    else
+    {
+        printf("%lf ", *ptotal);
+    }
 }
 
 int main()
